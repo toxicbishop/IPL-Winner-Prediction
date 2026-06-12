@@ -1,0 +1,77 @@
+tournaments:
+  ipl:
+    db_name: "ipl.db"
+  icc_men:
+    db_name: "icc_men.db"
+  icc_women:
+    db_name: "icc_women.db"
+
+teams:
+  CSK: "Chennai Super Kings"
+  MI: "Mumbai Indians"
+  RCB: "Royal Challengers Bengaluru"
+  KKR: "Kolkata Knight Riders"
+  DC: "Delhi Capitals"
+  PBKS: "Punjab Kings"
+  RR: "Rajasthan Royals"
+  SRH: "Sunrisers Hyderabad"
+  LSG: "Lucknow Super Giants"
+  GT: "Gujarat Titans"
+
+icc_men_teams:
+  IND: "India"
+  PAK: "Pakistan"
+  AUS: "Australia"
+  ENG: "England"
+  RSA: "South Africa"
+  NZL: "New Zealand"
+  WI: "West Indies"
+  SL: "Sri Lanka"
+  AFG: "Afghanistan"
+  BAN: "Bangladesh"
+  IRE: "Ireland"
+  NED: "Netherlands"
+  NAM: "Namibia"
+  USA: "USA"
+  CAN: "Canada"
+  UGA: "Uganda"
+
+team_aliases:
+  "Rising Pune Supergiant": "RPS"
+  "Rising Pune Supergiants": "RPS"
+  "Pune Warriors": "PW"
+  "Kochi Tuskers Kerala": "KTK"
+  "Deccan Chargers": "DC_OLD"
+  "Delhi Daredevils": "DC"
+  "Kings XI Punjab": "PBKS"
+  "Royal Challengers Bangalore": "RCB"
+  "Royal Challengers Bengaluru": "RCB"
+  "Chennai Super Kings": "CSK"
+  "Mumbai Indians": "MI"
+  "Kolkata Knight Riders": "KKR"
+  "Rajasthan Royals": "RR"
+  "Sunrisers Hyderabad": "SRH"
+  "Delhi Capitals": "DC"
+  "Punjab Kings": "PBKS"
+  "Lucknow Super Giants": "LSG"
+  "Gujarat Titans": "GT"
+  "Gujarat Lions": "GL"
+
+retired_team_map:
+  DC_OLD: "SRH"
+  RPS: "CSK"
+  GL: "GT"
+  PW: "DC"
+  KTK: "KTK"
+
+seasons:
+  first: 2008
+  last_known: 2026
+  predict: 2027
+
+feature_engineering:
+  form_window: 10
+  home_advantage: true
+  toss_features: true
+  venue_features: true
+  h2h_window_seasons: 5

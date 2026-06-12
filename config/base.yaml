@@ -1,0 +1,9 @@
+paths:
+  base_dir: "."
+  data_dir: "data"
+  outputs_dir: "outputs"
+  logs_dir: "."
+
+logging:
+  level: "INFO"
+  file: "ipl_prediction.log"

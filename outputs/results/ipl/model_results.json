@@ -1,0 +1,25 @@
+{
+  "xgboost": {
+    "cv_accuracy": 0.5338,
+    "cv_std": 0.0078,
+    "train_accuracy": 0.7548,
+    "test_accuracy": 0.5317,
+    "test_precision": 0.4634,
+    "test_recall": 0.4222,
+    "test_f1": 0.4419,
+    "test_roc_auc": 0.5171,
+    "accuracy_2024": 0.5352,
+    "top_features": {
+      "last10_death_bowl_diff": 0.0925053060054779,
+      "t2_venue_wr": 0.0880974531173706,
+      "last10_top3_runs_diff": 0.08764246106147766,
+      "t1_last10_form": 0.08305316418409348,
+      "win_streak_diff": 0.08051354438066483,
+      "last10_mid_overs_econ_diff": 0.07809299230575562,
+      "t2_last10_form": 0.07700284570455551,
+      "t1_venue_wr": 0.07679678499698639,
+      "last3_win_rate_diff": 0.07612050324678421,
+      "last10_top_order_sr_diff": 0.07377612590789795
+    }
+  }
+}
