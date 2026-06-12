@@ -1,0 +1,14 @@
+artifact_uri: file:///D:\Code\Repo\IPL-Winner-Prediction-2026\outputs\mlflow/163926142006176966/ab2a59ba525747c093dbdff273a100ff/artifacts
+end_time: 1779526996650
+entry_point_name: ''
+experiment_id: '163926142006176966'
+lifecycle_stage: active
+run_id: ab2a59ba525747c093dbdff273a100ff
+run_name: ipl_xgboost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1779526991055
+status: 3
+tags: []
+user_id: Levono
