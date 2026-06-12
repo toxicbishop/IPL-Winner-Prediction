@@ -1,0 +1,180 @@
+{
+  "season": 2026,
+  "tournament": "ipl",
+  "last_updated": "2026-05-23",
+  "data_coverage": "Matches till May 23, 2026",
+  "model_type": "Temporal XGBoost + Monte Carlo",
+  "validation_accuracy_2024": "58%",
+  "method": "Heuristic Signaling + Calibrated Probability",
+  "rankings": [
+    {
+      "rank": 1,
+      "team_id": "RCB",
+      "team_name": "Royal Challengers Bengaluru",
+      "win_probability": 22.50,
+      "confidence": "High",
+      "explanation": {
+        "why": [
+          "Table toppers",
+          "High Powerplay Strike Rate",
+          "Strong NRR +0.783"
+        ],
+        "risk": [
+          "Bowling depth in death overs"
+        ]
+      },
+      "trend": 3.05
+    },
+    {
+      "rank": 2,
+      "team_id": "GT",
+      "team_name": "Gujarat Titans",
+      "win_probability": 20.10,
+      "confidence": "High",
+      "explanation": {
+        "why": [
+          "Qualified for playoffs",
+          "Squad depth",
+          "Strong NRR +0.695"
+        ],
+        "risk": [
+          "Middle-order fragility"
+        ]
+      },
+      "trend": 2.1
+    },
+    {
+      "rank": 3,
+      "team_id": "SRH",
+      "team_name": "Sunrisers Hyderabad",
+      "win_probability": 18.70,
+      "confidence": "High",
+      "explanation": {
+        "why": [
+          "9 wins from 14",
+          "Aggressive batting",
+          "Early Wicket-taking Threat"
+        ],
+        "risk": [
+          "Spin vulnerability"
+        ]
+      },
+      "trend": 0.91
+    },
+    {
+      "rank": 4,
+      "team_id": "RR",
+      "team_name": "Rajasthan Royals",
+      "win_probability": 14.20,
+      "confidence": "Medium",
+      "explanation": {
+        "why": [
+          "4th in standings",
+          "Smart captaincy"
+        ],
+        "risk": [
+          "4th spot not yet confirmed"
+        ]
+      },
+      "trend": 0.5
+    },
+    {
+      "rank": 5,
+      "team_id": "PBKS",
+      "team_name": "Punjab Kings",
+      "win_probability": 7.80,
+      "confidence": "Low",
+      "explanation": {
+        "why": [
+          "Positive NRR",
+          "6 wins from 13"
+        ],
+        "risk": [
+          "Inconsistency"
+        ]
+      },
+      "trend": 0.3
+    },
+    {
+      "rank": 6,
+      "team_id": "KKR",
+      "team_name": "Kolkata Knight Riders",
+      "win_probability": 7.20,
+      "confidence": "Low",
+      "explanation": {
+        "why": [
+          "Defending champions",
+          "All-round balance"
+        ],
+        "risk": [
+          "Borderline NRR"
+        ]
+      },
+      "trend": -0.4
+    },
+    {
+      "rank": 7,
+      "team_id": "DC",
+      "team_name": "Delhi Capitals",
+      "win_probability": 5.10,
+      "confidence": "Low",
+      "explanation": {
+        "why": [
+          "Young talent"
+        ],
+        "risk": [
+          "Worst NRR among contenders"
+        ]
+      },
+      "trend": -1.1
+    },
+    {
+      "rank": 8,
+      "team_id": "CSK",
+      "team_name": "Chennai Super Kings",
+      "win_probability": 0.00,
+      "confidence": "Eliminated",
+      "explanation": {
+        "why": [
+          "Eliminated from playoffs contention"
+        ],
+        "risk": [
+          "3rd consecutive season without playoffs"
+        ]
+      },
+      "trend": -0.51
+    },
+    {
+      "rank": 9,
+      "team_id": "MI",
+      "team_name": "Mumbai Indians",
+      "win_probability": 0.00,
+      "confidence": "Eliminated",
+      "explanation": {
+        "why": [
+          "Eliminated from playoffs contention"
+        ],
+        "risk": [
+          "4 wins from 13 matches"
+        ]
+      },
+      "trend": -0.27
+    },
+    {
+      "rank": 10,
+      "team_id": "LSG",
+      "team_name": "Lucknow Super Giants",
+      "win_probability": 0.00,
+      "confidence": "Eliminated",
+      "explanation": {
+        "why": [
+          "Eliminated from playoffs contention"
+        ],
+        "risk": [
+          "Bottom of the table"
+        ]
+      },
+      "trend": -1.5
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "_meta": {
+    "description": "2026 IPL priors used by src/prediction/predict_2026.py. Edit values here instead of code.",
+    "squad_strength_scale": "0-10 (10 = strongest squad)",
+    "playoff_rate_3yr_scale": "fraction of last 3 seasons where team reached playoffs",
+    "season_2025_rank_score_scale": "1-10 ranking by 2025 finish (10 = champion)",
+    "last_updated": "2026-04-14",
+    "playoff_rate_3yr_source": "Cricsheet (seasons 2023-2025)",
+    "season_2025_rank_source": "Cricsheet 2025 final standings"
+  },
+  "squad_strength_2026": {
+    "RCB": 9.2,
+    "MI": 9.0,
+    "KKR": 8.8,
+    "SRH": 8.5,
+    "CSK": 8.3,
+    "RR": 8.2,
+    "GT": 8.0,
+    "LSG": 7.8,
+    "DC": 7.5,
+    "PBKS": 7.3
+  },
+  "playoff_rate_3yr": {
+    "RCB": 0.6667,
+    "MI": 0.6667,
+    "KKR": 0.3333,
+    "SRH": 0.3333,
+    "CSK": 0.3333,
+    "RR": 0.3333,
+    "GT": 0.6667,
+    "LSG": 0.3333,
+    "DC": 0.0,
+    "PBKS": 0.3333
+  },
+  "season_2025_rank_score": {
+    "RCB": 10,
+    "MI": 8,
+    "KKR": 3,
+    "SRH": 6,
+    "CSK": 1,
+    "RR": 2,
+    "GT": 7,
+    "LSG": 5,
+    "DC": 4,
+    "PBKS": 9
+  }
+}

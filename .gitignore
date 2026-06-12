@@ -1,0 +1,99 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtualenv
+venv/
+env/
+.venv/
+.codex_venv
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+*.txt
+logs/
+
+# Data outputs (generated - not committed to keep repo lean)
+data/raw_datasets/
+data/mock/
+data/raw/*.csv
+data/raw/*.json
+data/processed/
+data/db/
+data/ipl_male_json/
+
+# Model artifacts (large binary files)
+outputs/models/
+outputs/results/*
+!outputs/results/.gitkeep
+!outputs/results/ipl/
+!outputs/results/ipl/**
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.vite/
+**/.vite/
+**/*.tsbuildinfo
+
+# AI Assistants
+.claude/
+.gemini/
+
+# Env (local overrides)
+.env
+.env.local
+.env.*.local
+*.local
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage / test output
+coverage/
+.nyc_output/
+
+# OS / Editor extras
+Thumbs.db
+.vs/
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Prefect
+.prefect/
+prefect.db
+
+# Go
+.gocache/
+.gomodcache/
+
+# Ruff
+.ruff_cache/

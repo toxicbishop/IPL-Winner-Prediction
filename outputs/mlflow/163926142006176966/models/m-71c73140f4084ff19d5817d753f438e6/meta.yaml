@@ -1,0 +1,10 @@
+artifact_location: file:///D:\Code\Repo\IPL-Winner-Prediction-2026\outputs\mlflow/163926142006176966/models/m-71c73140f4084ff19d5817d753f438e6/artifacts
+creation_timestamp: 1779526991512
+experiment_id: '163926142006176966'
+last_updated_timestamp: 1779526996594
+model_id: m-71c73140f4084ff19d5817d753f438e6
+model_type: null
+name: model_xgboost
+source_run_id: ab2a59ba525747c093dbdff273a100ff
+status: 2
+status_message: null

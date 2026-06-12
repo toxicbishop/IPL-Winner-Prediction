@@ -1,0 +1,23 @@
+artifact_path: file:///D:\Code\Repo\IPL-Winner-Prediction-2026\outputs\mlflow/163926142006176966/models/m-359b9e1058f44a44aba4c3b57741e9af/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.13
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.12.0
+model_id: m-359b9e1058f44a44aba4c3b57741e9af
+model_size_bytes: 112937
+model_uuid: m-359b9e1058f44a44aba4c3b57741e9af
+prompts: null
+run_id: e43237f04c11499c88fa7f61c1eca6dd
+utc_time_created: '2026-05-23 09:08:58.382880'
