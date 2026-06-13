@@ -45,32 +45,36 @@ const ChartImage: React.FC<{ src: string; alt: string }> = ({ src, alt }) => {
 };
 
 const AnalyticsTab: React.FC<AnalyticsTabProps> = ({ tournament }) => {
+  const cacheBuster = React.useMemo(() => Date.now(), [tournament]);
+
   return (
-    <div className="fade-in" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)' }}>
-      {/* Historical Win-Rate Timeline */}
-      <div className="card">
-        <div className="card-terminal-bar">
-          <span className="terminal-id">ANAL_ID: HIST_WIN_RATE</span>
-          <span className="terminal-id">2008-PRESENT</span>
-        </div>
-        <div className="card-body">
-          <div className="card-header">
-            <h3>Historical Win-Rate Timeline</h3>
+    <div className="fade-in" style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-2xl)' }}>
+      {/* Historical Context */}
+      <div>
+        <div className="card">
+          <div className="card-terminal-bar">
+            <span className="terminal-id">ANAL_ID: HIST_WIN_RATE</span>
+            <span className="terminal-id">2008-PRESENT</span>
           </div>
-          <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
-            Aggregated win rates mapping franchise dominance from 2008 to present day.
-          </p>
-          <div style={{
-            padding: 'var(--space-md)',
-            display: 'flex',
-            justifyContent: 'center',
-            background: 'var(--color-bg)',
-            border: '1px solid var(--color-surface-highest)',
-          }}>
-            <ChartImage
-              src={`${API_BASE}/outputs/results/${tournament}/historical_win_rates.png`}
-              alt="Historical Win Rates"
-            />
+          <div className="card-body">
+            <div className="card-header">
+              <h3>Historical Win-Rate Timeline</h3>
+            </div>
+            <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
+              Aggregated win rates mapping franchise dominance from 2008 to present day.
+            </p>
+            <div style={{
+              padding: 'var(--space-md)',
+              display: 'flex',
+              justifyContent: 'center',
+              background: 'var(--color-bg)',
+              border: '1px solid var(--color-surface-highest)',
+            }}>
+              <ChartImage
+                src={`${API_BASE}/outputs/results/${tournament}/historical_win_rates.png?v=${cacheBuster}`}
+                alt="Historical Win Rates"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -95,7 +99,7 @@ const AnalyticsTab: React.FC<AnalyticsTabProps> = ({ tournament }) => {
               border: '1px solid var(--color-surface-highest)',
             }}>
               <ChartImage
-                src={`${API_BASE}/outputs/results/${tournament}/model_comparison.png`}
+                src={`${API_BASE}/outputs/results/${tournament}/model_comparison.png?v=${cacheBuster}`}
                 alt="Model Comparison"
               />
             </div>
@@ -104,15 +108,15 @@ const AnalyticsTab: React.FC<AnalyticsTabProps> = ({ tournament }) => {
 
         <div className="card">
           <div className="card-terminal-bar">
-            <span className="terminal-id">ANAL_ID: SHAP_SUMMARY</span>
-            <span className="terminal-id">TREE_EXPLAIN</span>
+            <span className="terminal-id">ANAL_ID: MODEL_PERF</span>
+            <span className="terminal-id">EVAL</span>
           </div>
           <div className="card-body">
             <div className="card-header">
-              <h3>Tree Ensemble Explainability</h3>
+              <h3>Ensemble Model Performance</h3>
             </div>
             <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
-              Global feature importance via SHAP interpretation.
+              Comparative breakdown of Logistic Regression, Extra Trees, and LightGBM models.
             </p>
             <div style={{
               padding: 'var(--space-md)',
@@ -120,8 +124,8 @@ const AnalyticsTab: React.FC<AnalyticsTabProps> = ({ tournament }) => {
               border: '1px solid var(--color-surface-highest)',
             }}>
               <ChartImage
-                src={`${API_BASE}/outputs/results/${tournament}/shap_summary_lightgbm.png`}
-                alt="SHAP Summary"
+                src={`${API_BASE}/outputs/results/${tournament}/shap_summary_lightgbm.png?v=${cacheBuster}`}
+                alt="SHAP Summary (LightGBM)"
               />
             </div>
           </div>
