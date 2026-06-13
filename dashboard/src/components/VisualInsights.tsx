@@ -8,7 +8,7 @@ const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
 
 const VisualInsights: React.FC<VisualInsightsProps> = ({ tournament }) => {
   const images = [
-    { title: 'Win Probability Breakdown', path: `${API_BASE}/outputs/results/${tournament}/win_probability.png`, desc: 'Probability distribution across the 2026 tournament cycle.' },
+    { title: 'Win Probability Breakdown', path: `${API_BASE}/outputs/results/${tournament}/win_probability.png`, desc: 'Probability distribution across the 2027 tournament cycle.' },
     { title: 'Feature Intelligence (Why)', path: `${API_BASE}/outputs/results/${tournament}/shap_summary_lightgbm.png`, desc: 'Detailed breakdown of heuristic signals driving team rankings.' },
     { title: 'Match Forecast Model', path: `${API_BASE}/outputs/results/${tournament}/model_comparison.png`, desc: 'Upcoming fixture simulations and venue-specific outcomes.' }
   ];
