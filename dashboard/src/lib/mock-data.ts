@@ -22,7 +22,7 @@ export const winnerProbabilities = {
   model_type: "Stacked temporal ensemble",
   validation_accuracy_2024: 58.2,
   data_coverage: "Cricsheet IPL ball-by-ball + engineered temporal features",
-  last_updated: "2026-06-10T18:30:00Z",
+  last_updated: "2027-06-10T18:30:00Z",
   rankings: teamRows.map((team) => ({
     team_id: team.short,
     win_probability: team.winProb,
@@ -154,7 +154,7 @@ export const playerDetail = (id: string) => {
 };
 
 export const seasons = [
-  { year: "2026", winner: "RCB", runnerUp: "GT", accuracy: 58.2 },
+  { year: "2027", winner: "RCB", runnerUp: "GT", accuracy: 58.2 },
   { year: "2025", winner: "RCB", runnerUp: "PBKS", accuracy: 60.1 },
   { year: "2024", winner: "KKR", runnerUp: "SRH", accuracy: 58.8 },
   { year: "2023", winner: "CSK", runnerUp: "GT", accuracy: 57.9 },
