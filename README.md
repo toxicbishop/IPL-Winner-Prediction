@@ -71,4 +71,4 @@ This system is a research project designed to demonstrate advanced ML engineerin
 This project is licensed under the terms of the [MIT License](LICENSE).
 
 ---
-*Created by [toxicbishop] — ML Engineering Portfolio*
+*Created by [toxicbishop](https://github.com/toxicbishop) — ML Engineering Portfolio*
