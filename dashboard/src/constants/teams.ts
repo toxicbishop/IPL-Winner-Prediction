@@ -166,7 +166,7 @@ export const PLAYER_DIRECTORY: PlayerData[] = [
 ];
 
 export const LEADERBOARD_DATA = {
-  updatedAt: '2026-04-23',
+  updatedAt: '2027-04-23',
   userStandings: [
     { rank: 1, name: 'BoundaryOracle', points: 1240, correct: 42, streak: 7, movement: 2 },
     { rank: 2, name: 'PowerplayPulse', points: 1198, correct: 40, streak: 5, movement: -1 },
