@@ -8,14 +8,17 @@
 This is a technical implementation of a dynamic machine learning system designed to model team strength and simulate IPL 2026 outcomes. The project focuses on **Strict Temporal Feature Engineering** to eliminate data leakage and captures the high-scoring, volatile trends of the modern "Impact Player" era.
 
 ### UI Previews
-![Win Probability Breakdown](Public/assets/Win-probability.png)
-*Win Probability Distribution across the 2026 tournament cycle.*
+![Dashboard](dashboard/public/assets/Dashboard.png)
+*Main Dashboard overview for tournament predictions.*
 
-![Feature Intelligence](Public/assets/Why.png)
-*Explaining the "Why" behind team rankings via heuristic signaling.*
+![Leaderboard](dashboard/public/assets/Leaderboard.png)
+*Leaderboard displaying the model and user standings.*
 
-![Match Forecast](Public/assets/Forcast.png)
-*Upcoming match predictions and venue-specific win probabilities.*
+![Teams](dashboard/public/assets/Teams.png)
+*Detailed team profiles, heuristics, and individual insights.*
+
+![Archive](dashboard/public/assets/Archive.png)
+*Historical tournament insights and model explainability.*
 
 ### Core Methodology
 - **Temporal Feature Engineering**: Models are trained on chronological snapshots, ensuring features like "team form" only use data available before the match date.
