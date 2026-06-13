@@ -25,7 +25,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   return (
     <aside className="sidebar">
-      <div className="sidebar-brand" title="IPL 2026 AI">
+      <div className="sidebar-brand" title="IPL 2027 AI">
         <Cpu size={20} strokeWidth={1.5} />
       </div>
 

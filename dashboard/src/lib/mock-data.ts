@@ -67,14 +67,14 @@ export const intelligence = {
 };
 
 export const matchFixtures = [
-  { date: "2026-05-26", team1: "RCB", team2: "GT", predicted_winner: "RCB", win_probability: 0.54 },
-  { date: "2026-05-27", team1: "SRH", team2: "RR", predicted_winner: "SRH", win_probability: 0.61 },
-  { date: "2026-05-29", team1: "GT", team2: "SRH", predicted_winner: "GT", win_probability: 0.55 },
-  { date: "2026-05-31", team1: "RCB", team2: "GT", predicted_winner: "RCB", win_probability: 0.52 },
+  { date: "2027-05-26", team1: "RCB", team2: "GT", predicted_winner: "RCB", win_probability: 0.54 },
+  { date: "2027-05-27", team1: "SRH", team2: "RR", predicted_winner: "SRH", win_probability: 0.61 },
+  { date: "2027-05-29", team1: "GT", team2: "SRH", predicted_winner: "GT", win_probability: 0.55 },
+  { date: "2027-05-31", team1: "RCB", team2: "GT", predicted_winner: "RCB", win_probability: 0.52 },
 ];
 
 export const winProb = {
-  matchId: "IPL-2026-FINAL-SIM",
+  matchId: "IPL-2027-FINAL-SIM",
   home: "RCB",
   away: "GT",
   series: Array.from({ length: 20 }, (_, i) => ({

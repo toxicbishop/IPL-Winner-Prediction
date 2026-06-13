@@ -141,28 +141,28 @@ const FALLBACK_SHAP: ShapFeature[] = [
 
 const FALLBACK_SCHEDULE: MatchFixture[] = [
   {
-    date: "2026-05-26",
+    date: "2027-05-26",
     team1: "RCB",
     team2: "GT",
     predicted_winner: "RCB",
     win_probability: 0.54,
   },
   {
-    date: "2026-05-27",
+    date: "2027-05-27",
     team1: "SRH",
     team2: "RR",
     predicted_winner: "SRH",
     win_probability: 0.61,
   },
   {
-    date: "2026-05-29",
+    date: "2027-05-29",
     team1: "GT",
     team2: "SRH",
     predicted_winner: "GT",
     win_probability: 0.55,
   },
   {
-    date: "2026-05-31",
+    date: "2027-05-31",
     team1: "RCB",
     team2: "GT",
     predicted_winner: "RCB",
