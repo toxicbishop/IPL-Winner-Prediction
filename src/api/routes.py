@@ -50,14 +50,21 @@ def get_intelligence(tournament: str = "ipl"):
 
 
 @router.get("/simulate-h2h")
-def simulate_h2h(team1: str, team2: str, tournament: str = "ipl"):
+def simulate_h2h(team1: str, team2: str, tournament: str = "ipl", venue: str = None):
     try:
-        return service.simulate_h2h(team1, team2, tournament)
+        return service.simulate_h2h(team1, team2, tournament, venue)
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e)) from e
     except Exception as e:
         logger.exception("Failed to simulate h2h")
         raise HTTPException(status_code=500, detail=str(e)) from e
+
+@router.get("/venues")
+def get_venues(tournament: str = "ipl"):
+    try:
+        return service.get_venues(tournament)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e)) from e
 
 
 @router.post("/trigger-pipeline", response_model=schemas.TriggerPipelineResponse)

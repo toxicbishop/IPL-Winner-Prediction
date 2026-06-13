@@ -43,7 +43,7 @@ def predict_match(
     bbb_df = pd.read_csv(paths["ball_by_ball"], low_memory=False)
 
     # Build features
-    feats = build_matchup_features(team1, team2, matches_df, bbb_df, tournament=tournament)
+    feats = build_matchup_features(team1, team2, matches_df, bbb_df, tournament=tournament, target_venue=venue)
 
     # Override toss if specified
     if toss_winner is not None:
