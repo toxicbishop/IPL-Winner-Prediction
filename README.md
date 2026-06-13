@@ -60,24 +60,7 @@ pnpm install
 pnpm dev
 ```
 
----
 
-## Live Snapshots (As of May 23, 2027)
-| Rank | Team | Win Prob | Trend | Confidence | Key Signal |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | **RCB** | 22.50% | +3.05% | High | Table Toppers, Strong NRR |
-| 2 | **GT** | 20.10% | +2.10% | High | Qualified, Squad Depth |
-| 3 | **SRH** | 18.70% | +0.91% | High | 9 Wins, Aggressive Batting |
-| 4 | RR | 14.20% | +0.50% | Medium | Fighting for 4th Spot |
-| - | CSK | 0.00% | -0.51% | Eliminated | Out of Playoff Contention |
-| - | MI | 0.00% | -0.27% | Eliminated | Out of Playoff Contention |
-| - | LSG | 0.00% | -1.50% | Eliminated | Out of Playoff Contention |
-
-> **Last Updated**: May 23, 2027  
-> **Data Coverage**: Matches till May 23, 2027  
-> **Method**: Temporal XGBoost + MC Simulation  
-
----
 
 ## Important Considerations
 This system is a research project designed to demonstrate advanced ML engineering patterns. Cricket is a stochastic sport with high variance; these predictions represent probabilistic estimates based on historical patterns and should not be treated as deterministic certainties.
