@@ -39,7 +39,7 @@ def plot_win_probability_bar(rankings: list, save_path: str = None):
     bars = ax.barh(teams[::-1], probs[::-1], color=colors[::-1], edgecolor="white", height=0.6)
     ax.set_xlabel("Win Probability (%)", fontsize=13, fontweight="bold")
     ax.set_title(
-        "IPL 2026 Winner Prediction\n(Stacking Ensemble + Bayesian Update)",
+        "IPL 2027 Winner Prediction\n(Stacking Ensemble + Bayesian Update)",
         fontsize=15,
         fontweight="bold",
         pad=15,
@@ -169,7 +169,7 @@ def plot_historical_win_rates(features_csv_path: str, save_path: str):
     ax.set_xlabel("Season", fontsize=13)
     ax.set_ylabel("Win Rate", fontsize=13)
     ax.set_title(
-        f"Tournament Team Win Rates by Season ({season_min}-{season_max})",
+        f"Tournament Team Win Rates by Season ({season_min}-2027)",
         fontsize=15,
         fontweight="bold",
     )
@@ -188,7 +188,7 @@ def generate_all_charts(tournament: str = "ipl"):
     results_dir = paths["results"]
     os.makedirs(results_dir, exist_ok=True)
 
-    pred_file = os.path.join(results_dir, "prediction_2026.json")
+    pred_file = os.path.join(results_dir, "prediction_2027.json")
     if os.path.exists(pred_file):
         with open(pred_file) as f:
             data = json.load(f)
