@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* =========================================================================
-   IPL 2026 · PAVILION ALMANAC
+   IPL 2027 · PAVILION ALMANAC
    --------------------------------------------------------------------------
    An editorial cricket almanac crossed with a trading terminal.
    Serif headlines (Fraunces), characterful body sans (Archivo),
@@ -619,9 +619,9 @@ p  { color: var(--color-text-secondary); }
   pointer-events: none;
 }
 
-/* Large ornamental "2026" numeral set behind the content */
+/* Large ornamental "2027" numeral set behind the content */
 .hero-champion::after {
-  content: '2026';
+  content: '2027';
   position: absolute;
   right: -0.1em;
   bottom: -0.45em;

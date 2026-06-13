@@ -99,7 +99,7 @@ export const TEAM_COLORS: Record<string, string> = {
 
 // Tournament dropdown options
 export const TOURNAMENTS = [
-  { value: 'ipl', label: 'IPL 2026' },
+  { value: 'ipl', label: 'IPL 2027' },
 ] as const;
 
 // Shared data interfaces

@@ -67,7 +67,7 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
               <h3>Bayesian Squad Priors</h3>
             </div>
             <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
-              Raw mathematical anchors reflecting 2026 auction strengths and historical playoff frequency.
+              Raw mathematical anchors reflecting 2027 auction strengths and historical playoff frequency.
             </p>
 
             {loading || !data ? (
