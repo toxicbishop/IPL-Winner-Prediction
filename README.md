@@ -45,16 +45,22 @@ This is a technical implementation of a dynamic machine learning system designed
 
 ## Quick Start
 ```bash
-# 1. Setup Environment
+# 1. install the venv
+python -m venv .venv
+
+#2. Upgrade Pip
+python -m pip install --upgrade pip
+
+# 3. Setup Environment
 pip install -r requirements.txt
 
-# 2. Re-ingest and Engineer Features
+# 4. Re-ingest and Engineer Features
 python main.py --mode setup
 
-# 3. Generate 2027 Predictions
+# 5. Generate 2027 Predictions
 python main.py --mode predict
 
-# 4. Run the Dashboard
+# 6. Run the Dashboard
 cd dashboard
 pnpm install
 pnpm dev
