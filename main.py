@@ -44,7 +44,13 @@ def mode_setup():
     logger.info("Step 1/5: Extracting match data from raw JSONs...")
     run_create_dataset()
 
+    import os
     for tournament in TOURNAMENTS.keys():
+        raw_dir = TOURNAMENTS[tournament]["raw_dir"]
+        if not os.path.exists(raw_dir) or not os.listdir(raw_dir) or (len(os.listdir(raw_dir)) == 1 and os.listdir(raw_dir)[0] == '.gitkeep'):
+            logger.warning(f"Skipping tournament '{tournament}' setup: raw data directory '{raw_dir}' is empty or does not exist.")
+            continue
+
         logger.info(f"--- Processing tournament: {tournament} ---")
         paths = get_tournament_paths(tournament)
 
