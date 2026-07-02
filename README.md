@@ -29,6 +29,8 @@ This is a technical implementation of a dynamic machine learning system designed
 ---
 
 ## Technical Architecture
+![System Architecture](Public/assets/IPL%20Winner%20Prediction%20%E2%80%94%20System%20Architecture.png)
+
 - **Dynamic Ingestion Pipeline**: Processes raw Cricsheet JSON data (currently synced up to the latest 2027 datasets).
 - **Heuristic Confidence Scoring**: Confidence levels (High/Medium/Low) are derived from probability separation and model certainty thresholds.
 - **Trend Modeling**: Tracks shifts in tournament win probability across data snapshots to reflect current momentum.
