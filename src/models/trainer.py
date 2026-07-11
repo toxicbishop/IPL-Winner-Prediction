@@ -20,10 +20,8 @@ from src.models.xgboost_model import XGBoostModel
 
 logger = logging.getLogger(__name__)
 
-# Set MLflow experiment — use SQLite backend (required by MLflow 3.x; file store is deprecated)
-_mlflow_db = os.path.abspath(os.path.join("outputs", "mlflow", "mlflow.db"))
-os.makedirs(os.path.dirname(_mlflow_db), exist_ok=True)
-mlflow.set_tracking_uri(f"sqlite:///{_mlflow_db}")
+# Set MLflow experiment
+mlflow.set_tracking_uri(f"file:///{os.path.abspath(os.path.join('outputs', 'mlflow'))}")
 mlflow.set_experiment("IPL_2026_Winner_Prediction")
 
 

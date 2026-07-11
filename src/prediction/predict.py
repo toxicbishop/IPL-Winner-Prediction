@@ -59,14 +59,12 @@ PREDICTION_VENUES_IPL = [
 
 
 def build_matchup_features(
-    team1: str, team2: str, df: pd.DataFrame, bbb_df: pd.DataFrame, tournament: str = "ipl", is_playoff: int = 0, target_venue: str = None
+    team1: str, team2: str, df: pd.DataFrame, bbb_df: pd.DataFrame, tournament: str = "ipl", is_playoff: int = 0
 ) -> pd.DataFrame:
     """
     Build feature rows for a hypothetical team1 vs team2 matchup in 2026.
     """
     venues = PREDICTION_VENUES_IPL if tournament == "ipl" else df["venue"].dropna().unique()[:5].tolist()
-    if target_venue and target_venue != "Any Venue":
-        venues = [target_venue]
     features_list = []
 
     # We use the end of the dataset as our 'current' state

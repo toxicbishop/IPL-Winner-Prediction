@@ -41,7 +41,7 @@ export default function DashboardPage({ dashboardData }: { dashboardData: any })
     <>
       <PageHeader
         eyebrow="Kinetic Monolith v1.1 · AI Platform"
-        title="IPL 2027"
+        title="IPL 2026"
       />
 
       {error && <ErrorBanner message={error} onRetry={retry} />}
