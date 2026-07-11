@@ -99,7 +99,7 @@ export const TEAM_COLORS: Record<string, string> = {
 
 // Tournament dropdown options
 export const TOURNAMENTS = [
-  { value: 'ipl', label: 'IPL 2027' },
+  { value: 'ipl', label: 'IPL 2026' },
 ] as const;
 
 // Shared data interfaces
@@ -166,7 +166,7 @@ export const PLAYER_DIRECTORY: PlayerData[] = [
 ];
 
 export const LEADERBOARD_DATA = {
-  updatedAt: '2027-04-23',
+  updatedAt: '2026-04-23',
   userStandings: [
     { rank: 1, name: 'BoundaryOracle', points: 1240, correct: 42, streak: 7, movement: 2 },
     { rank: 2, name: 'PowerplayPulse', points: 1198, correct: 40, streak: 5, movement: -1 },

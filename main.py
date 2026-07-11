@@ -1,12 +1,12 @@
 """
-IPL Winner Prediction - Main Entry Point
+IPL 2026 Winner Prediction - Main Entry Point
 
 Uses REAL IPL ball-by-ball data (IPL.csv, 2008-2025, 1169 matches).
 
 Usage:
   python main.py --mode setup      # Extract data from IPL.csv and engineer features
   python main.py --mode train      # Train all models
-  python main.py --mode predict    # Predict winner
+  python main.py --mode predict    # Predict 2026 winner
   python main.py --mode all        # Run full pipeline end-to-end
   python main.py --mode visualize  # Generate charts (needs predict to run first)
 """
@@ -44,13 +44,7 @@ def mode_setup():
     logger.info("Step 1/5: Extracting match data from raw JSONs...")
     run_create_dataset()
 
-    import os
     for tournament in TOURNAMENTS.keys():
-        raw_dir = TOURNAMENTS[tournament]["raw_dir"]
-        if not os.path.exists(raw_dir) or not os.listdir(raw_dir) or (len(os.listdir(raw_dir)) == 1 and os.listdir(raw_dir)[0] == '.gitkeep'):
-            logger.warning(f"Skipping tournament '{tournament}' setup: raw data directory '{raw_dir}' is empty or does not exist.")
-            continue
-
         logger.info(f"--- Processing tournament: {tournament} ---")
         paths = get_tournament_paths(tournament)
 
@@ -82,16 +76,16 @@ def mode_train(sanity_check: bool = False):
 
 
 def mode_predict():
-    logger.info("=== PREDICT: IPL Winner Prediction ===")
+    logger.info("=== PREDICT: IPL 2026 Winner Prediction ===")
     t0 = time.time()
 
-    from src.prediction.predict import (
-        predict_winner,
+    from src.prediction.predict_2026 import (
+        predict_2026_winner,
         print_predictions,
         save_predictions,
     )
 
-    rankings, fixtures = predict_winner()
+    rankings, fixtures = predict_2026_winner()
     print_predictions(rankings)
     save_predictions(rankings, fixtures)
 
@@ -127,7 +121,7 @@ def mode_all(sanity_check: bool = False):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="IPL Winner Prediction (Real Data)",
+        description="IPL 2026 Winner Prediction (Real Data)",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=__doc__,
     )
@@ -147,7 +141,7 @@ def parse_args():
 
 if __name__ == "__main__":
     args = parse_args()
-    logger.info(f"Starting IPL prediction pipeline | mode={args.mode}")
+    logger.info(f"Starting IPL 2026 prediction pipeline | mode={args.mode}")
 
     if args.mode == "setup":
         mode_setup()
