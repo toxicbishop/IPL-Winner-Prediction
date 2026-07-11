@@ -1,5 +1,5 @@
 # Use official Python lightweight image
-FROM python:3.14-slim
+FROM python:3.11-slim
 
 # Set working directory
 WORKDIR /app
@@ -23,7 +23,7 @@ ENV DB_ENGINE=postgres
 ENV POSTGRES_HOST=db
 ENV POSTGRES_PORT=5432
 ENV POSTGRES_USER=postgres
-ENV POSTGRES_PASSWORD=1234
+# Do NOT hardcode secrets here — pass POSTGRES_PASSWORD at runtime via docker-compose or -e flag
 ENV POSTGRES_DB=ipl
 
 # Default command: run the full pipeline with sanity check
