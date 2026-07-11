@@ -13,18 +13,6 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
   const [team2, setTeam2] = useState("MI");
   const [prob, setProb] = useState<number | null>(null);
   const [loadingSim, setLoadingSim] = useState(false);
-  const [venue, setVenue] = useState("Any Venue");
-  const [venues, setVenues] = useState<string[]>([]);
-
-  useEffect(() => {
-    const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
-    fetch(`${API_BASE}/venues`)
-      .then(res => res.json())
-      .then(data => {
-        if (Array.isArray(data)) setVenues(data);
-      })
-      .catch(err => console.error("Failed to fetch venues", err));
-  }, []);
 
   useEffect(() => {
     if (team1 === team2) {
@@ -35,8 +23,7 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
     setLoadingSim(true);
     const API_BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
 
-    const venueParam = venue !== "Any Venue" ? `&venue=${encodeURIComponent(venue)}` : "";
-    fetch(`${API_BASE}/simulate-h2h?team1=${team1}&team2=${team2}${venueParam}`)
+    fetch(`${API_BASE}/simulate-h2h?team1=${team1}&team2=${team2}`)
       .then(res => {
         if (!res.ok) throw new Error();
         return res.json();
@@ -57,7 +44,7 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
         }
         setLoadingSim(false);
       });
-  }, [team1, team2, venue, data]);
+  }, [team1, team2, data]);
 
   const team1Prob = prob !== null ? prob : 50.0;
   const team2Prob = 100 - team1Prob;
@@ -80,7 +67,7 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
               <h3>Bayesian Squad Priors</h3>
             </div>
             <p style={{ fontSize: '0.75rem', color: 'var(--color-text-muted)', marginBottom: 'var(--space-lg)' }}>
-              Raw mathematical anchors reflecting 2027 auction strengths and historical playoff frequency.
+              Raw mathematical anchors reflecting 2026 auction strengths and historical playoff frequency.
             </p>
 
             {loading || !data ? (
@@ -153,24 +140,6 @@ const IntelligenceTab: React.FC<IntelligenceTabProps> = ({ data, loading }) => {
                 onChange={(e) => setTeam2(e.target.value)}
               >
                 {teamKeys.filter(t => t !== team1).map(t => <option key={t}>{t}</option>)}
-              </select>
-            </div>
-
-            <div style={{ display: 'flex', gap: 'var(--space-sm)', marginBottom: 'var(--space-xl)', alignItems: 'center' }}>
-              <span
-                className="mono-label"
-                style={{ color: 'var(--color-text-muted)', fontSize: '0.75rem', width: '60px' }}
-              >
-                VENUE
-              </span>
-              <select
-                className="form-select"
-                style={{ flex: 1 }}
-                value={venue}
-                onChange={(e) => setVenue(e.target.value)}
-              >
-                <option value="Any Venue">Any Venue (Average)</option>
-                {venues.map(v => <option key={v} value={v}>{v}</option>)}
               </select>
             </div>
 

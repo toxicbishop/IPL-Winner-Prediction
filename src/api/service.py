@@ -91,20 +91,11 @@ def get_intelligence(tournament: str) -> Any:
     }
 
 
-def simulate_h2h(team1: str, team2: str, tournament: str, venue: str = None) -> Any:
+def simulate_h2h(team1: str, team2: str, tournament: str) -> Any:
     tournament = validate_tournament(tournament)
     from src.prediction.match_predictor import predict_match
 
-    return predict_match(team1, team2, tournament=tournament, venue=venue)
-
-
-def get_venues(tournament: str) -> list[str]:
-    tournament = validate_tournament(tournament)
-    from config import get_tournament_paths
-    import pandas as pd
-    paths = get_tournament_paths(tournament)
-    df = pd.read_csv(paths["matches"].replace("matches.csv", "matches_processed.csv"))
-    return sorted(df["venue"].dropna().unique().tolist())
+    return predict_match(team1, team2, tournament=tournament)
 
 
 def trigger_pipeline() -> dict[str, str]:
