@@ -76,4 +76,4 @@ python main.py --mode predict
 This system is a research project designed to demonstrate advanced ML engineering patterns. Cricket is a stochastic sport with high variance; these predictions represent probabilistic estimates based on historical patterns and should not be treated as deterministic certainties.
 
 ---
-*Created by [toxicbishop] — ML Engineering Portfolio*
+*Created by [toxicbishop](https://github.com/toxicbishop) — ML Engineering Portfolio*
