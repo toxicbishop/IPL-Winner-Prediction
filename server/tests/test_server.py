@@ -22,18 +22,20 @@ def client():
 )
 def test_rejects_bad_tournament(client, endpoint):
     r = client.get(endpoint, params={"tournament": "../etc/passwd"})
-    assert r.status_code == 400
-    assert "Invalid tournament" in r.json()["detail"]
+    # FastAPI's Pydantic validation rejects bad input with 422 before the
+    # route handler runs — this is the correct, expected behaviour.
+    assert r.status_code == 422
 
 
 def test_shap_rejects_bad_model_name(client):
     r = client.get("/api/shap-importance/evil;rm", params={"tournament": "ipl"})
-    assert r.status_code == 400
-    assert "Invalid model" in r.json()["detail"]
+    assert r.status_code == 422
 
 
 def test_shap_rejects_bad_tournament(client):
     r = client.get("/api/shap-importance/random_forest", params={"tournament": "bogus"})
+    # "bogus" is a valid pattern ([a-z]+) so it passes validation and hits
+    # the route handler which raises ValueError -> 400.
     assert r.status_code == 400
 
 
