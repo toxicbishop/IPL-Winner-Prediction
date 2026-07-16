@@ -32,6 +32,7 @@ env/
 # Logs
 *.log
 *.txt
+!requirements.txt
 logs/
 
 # Data outputs (generated - not committed to keep repo lean)
