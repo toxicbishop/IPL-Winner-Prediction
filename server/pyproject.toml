@@ -24,6 +24,7 @@ dependencies = [
     "uvicorn==0.47.0",
     "tqdm==4.68.2",
     "pydantic>=2.0",
+    "slowapi>=0.1.9",
 ]
 
 [project.optional-dependencies]
