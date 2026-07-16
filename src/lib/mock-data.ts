@@ -1,5 +1,5 @@
 export const teamRows = [
-  { id: "rcb", name: "Royal Challengers Bengaluru", short: "RCB", color: "#d71920", titles: 1, predictedFinish: 1, winProb: 22.5, trend: 3.05, confidence: "High" },
+  { id: "rcb", name: "Royal Challengers Bengaluru", short: "RCB", color: "#d71920", titles: 2, predictedFinish: 1, winProb: 22.5, trend: 3.05, confidence: "High" },
   { id: "gt", name: "Gujarat Titans", short: "GT", color: "#1b2a4a", titles: 1, predictedFinish: 2, winProb: 20.1, trend: 2.1, confidence: "High" },
   { id: "srh", name: "Sunrisers Hyderabad", short: "SRH", color: "#f26522", titles: 1, predictedFinish: 3, winProb: 18.7, trend: 0.91, confidence: "High" },
   { id: "rr", name: "Rajasthan Royals", short: "RR", color: "#ea1a85", titles: 1, predictedFinish: 4, winProb: 14.2, trend: 0.5, confidence: "Medium" },
