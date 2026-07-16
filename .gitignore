@@ -32,23 +32,24 @@ env/
 # Logs
 *.log
 *.txt
+!requirements.txt
 logs/
 
 # Data outputs (generated - not committed to keep repo lean)
-data/raw_datasets/
-data/mock/
-data/raw/*.csv
-data/raw/*.json
-data/processed/
-data/db/
-data/ipl_male_json/
+server/data/raw_datasets/
+server/data/mock/
+server/data/raw/*.csv
+server/data/raw/*.json
+server/data/processed/
+server/data/db/
+server/data/ipl_male_json/
 
 # Model artifacts (large binary files)
-outputs/models/
-outputs/results/*
-!outputs/results/.gitkeep
-!outputs/results/ipl/
-!outputs/results/ipl/**
+server/outputs/models/
+server/outputs/results/*
+!server/outputs/results/.gitkeep
+!server/outputs/results/ipl/
+!server/outputs/results/ipl/**
 
 # Node / Frontend
 node_modules/
