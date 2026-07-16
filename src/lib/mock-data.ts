@@ -156,11 +156,23 @@ export const playerDetail = (id: string) => {
 export const seasons = [
   { year: "2026", winner: "RCB", runnerUp: "GT", accuracy: 58.2 },
   { year: "2025", winner: "RCB", runnerUp: "PBKS", accuracy: 60.1 },
-  { year: "2024", winner: "KKR", runnerUp: "SRH", accuracy: 58.8 },
-  { year: "2023", winner: "CSK", runnerUp: "GT", accuracy: 57.9 },
-  { year: "2022", winner: "GT", runnerUp: "RR", accuracy: 56.7 },
-  { year: "2021", winner: "CSK", runnerUp: "KKR", accuracy: 56.2 },
-  { year: "2020", winner: "MI", runnerUp: "DC", accuracy: 55.6 },
+  { year: "2024", winner: "KKR", runnerUp: "SRH", accuracy: 81.2 },
+  { year: "2023", winner: "CSK", runnerUp: "GT", accuracy: 79.8 },
+  { year: "2022", winner: "GT", runnerUp: "RR", accuracy: 77.5 },
+  { year: "2021", winner: "CSK", runnerUp: "KKR", accuracy: 75.9 },
+  { year: "2020", winner: "MI", runnerUp: "DC", accuracy: 74.1 },
+  { year: "2019", winner: "MI", runnerUp: "CSK", accuracy: 72.6 },
+  { year: "2018", winner: "CSK", runnerUp: "SRH", accuracy: 71.0 },
+  { year: "2017", winner: "MI", runnerUp: "RPS", accuracy: 69.5 },
+  { year: "2016", winner: "SRH", runnerUp: "RCB", accuracy: 68.2 },
+  { year: "2015", winner: "MI", runnerUp: "CSK", accuracy: 67.0 },
+  { year: "2014", winner: "KKR", runnerUp: "PBKS", accuracy: 65.5 },
+  { year: "2013", winner: "MI", runnerUp: "CSK", accuracy: 64.3 },
+  { year: "2012", winner: "KKR", runnerUp: "CSK", accuracy: 63.0 },
+  { year: "2011", winner: "CSK", runnerUp: "RCB", accuracy: 61.8 },
+  { year: "2010", winner: "CSK", runnerUp: "MI", accuracy: 60.5 },
+  { year: "2009", winner: "DCH", runnerUp: "RCB", accuracy: 59.0 },
+  { year: "2008", winner: "RR", runnerUp: "CSK", accuracy: 57.5 },
 ];
 
 export const seasonDetail = (year: string) => {
