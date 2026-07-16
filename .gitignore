@@ -97,3 +97,6 @@ prefect.db
 
 # Ruff
 .ruff_cache/
+
+# Agents
+.agents/
