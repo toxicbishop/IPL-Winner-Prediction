@@ -11,7 +11,7 @@ from src.api.routes import router as api_router
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("ipl.server")
 
-app = FastAPI(title="IPL 2026 Prediction API")
+app = FastAPI(title="IPL Prediction")
 
 # CORS setup
 ALLOWED_ORIGINS = [
@@ -43,7 +43,7 @@ app.include_router(api_router, prefix="/api")
 
 @app.get("/")
 def health_check():
-    return {"status": "healthy", "service": "IPL 2026 Prediction API"}
+    return {"status": "healthy", "service": "IPL Prediction"}
 
 
 if __name__ == "__main__":
