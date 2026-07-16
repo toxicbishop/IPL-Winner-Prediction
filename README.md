@@ -1,5 +1,14 @@
 # IPL Winner Prediction System
 
+[![CI](https://github.com/toxicbishop/IPL-Winner-Prediction/actions/workflows/ci.yml/badge.svg)](https://github.com/toxicbishop/IPL-Winner-Prediction/actions/workflows/ci.yml)
+[![Docker Image CI/CD](https://github.com/toxicbishop/IPL-Winner-Prediction/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/toxicbishop/IPL-Winner-Prediction/actions/workflows/docker-publish.yml)
+![Python](https://img.shields.io/badge/Python-3.11.x-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
+![Dataset](https://img.shields.io/badge/Dataset-Cricsheet-20BEFF)
+![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![Platform](https://img.shields.io/badge/platform-Docker%20%7C%20Windows%20%7C%20Linux%20%7C%20macOS-lightgrey.svg)
+
 ### Temporal ML · Dynamic Modeling · Probability-Based Forecasting
 
 ---
