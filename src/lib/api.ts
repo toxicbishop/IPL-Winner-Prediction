@@ -3,11 +3,14 @@
 import * as mock from "./mock-data";
 
 const BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:8000/api";
+const API_KEY = import.meta.env.VITE_API_KEY || "";
 
 async function get<T>(path: string, fallback: T): Promise<T> {
   if (!BASE) return fallback;
   try {
-    const res = await fetch(`${BASE}${path}`);
+    const headers: Record<string, string> = {};
+    if (API_KEY) headers["X-API-Key"] = API_KEY;
+    const res = await fetch(`${BASE}${path}`, { headers });
     if (!res.ok) throw new Error(String(res.status));
     return (await res.json()) as T;
   } catch {
