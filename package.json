@@ -1,24 +1,31 @@
 {
-  "name": "ipl-winner-prediction-2026",
+  "name": "ipl-2026-dashboard",
   "version": "1.0.0",
-  "description": "---",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/toxicbishop/IPL-Winner-Prediction-2026.git"
+  "dependencies": {
+    "@tanstack/react-query": "^5.100.10",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.454.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.15.1",
+    "recharts": "^2.13.3",
+    "tailwind-merge": "^2.5.4"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/toxicbishop/IPL-Winner-Prediction-2026/issues"
-  },
-  "homepage": "https://github.com/toxicbishop/IPL-Winner-Prediction-2026#readme"
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^6.0.1",
+    "autoprefixer": "^10.5.0",
+    "postcss": "^8.5.10",
+    "tailwindcss": "^3.4.19",
+    "typescript": "^6.0.2",
+    "vite": "^8.1.4"
+  }
 }
