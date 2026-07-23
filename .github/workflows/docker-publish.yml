@@ -41,6 +41,10 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
+      # Set up Buildx for caching
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       # Build and push Docker image with Buildx (don't push on PR)
       - name: Build and push Docker image
         id: build-and-push
@@ -51,3 +55,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
