@@ -10,11 +10,11 @@ shap>=0.44.0
 optuna>=4.0.0
 fastapi>=0.136.0
 uvicorn>=0.29.0
-tqdm>=4.67.0
+tqdm>=4.68.4
 pydantic>=2.0
-pyarrow<25.0.0
+pyarrow>=25.0.0
 psycopg2-binary>=2.9.9
 mlflow>=3.0.0
 python-dotenv>=1.0.0
-slowapi>=0.1.9
+slowapi>=0.1.10
 sqlalchemy>=2.0.0
