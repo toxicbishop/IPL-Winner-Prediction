@@ -46,7 +46,7 @@ importers:
         specifier: ^6.0.1
         version: 6.0.4(vite@8.1.5(jiti@1.21.7))
       autoprefixer:
-        specifier: ^10.5.0
+        specifier: ^10.5.4
         version: 10.5.4(postcss@8.5.22)
       postcss:
         specifier: ^8.5.19
@@ -304,8 +304,8 @@ packages:
     peerDependencies:
       postcss: ^8.1.0
 
-  baseline-browser-mapping@2.11.1:
-    resolution: {integrity: sha512-HYXq73DDpCtNzOmrFsm9eSwCvWCql0RzqjpDzXN9EadiLJ4DNat0nsZ/Bzmy+Ud12mb4/zKDY0cQ805ZzN+i0A==}
+  baseline-browser-mapping@2.11.8:
+    resolution: {integrity: sha512-zAgkquC2WYF0PIc6XbNYkA2uuxxFavzgmX61R+dHDUa558V8Ejf8ozTZFR6QzM24RWu4kBcRkhJ5kpz77j9fnQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1121,7 +1121,7 @@ snapshots:
       postcss: 8.5.22
       postcss-value-parser: 4.2.0
 
-  baseline-browser-mapping@2.11.1: {}
+  baseline-browser-mapping@2.11.8: {}
 
   binary-extensions@2.3.0: {}
 
@@ -1131,9 +1131,9 @@ snapshots:
 
   browserslist@4.28.7:
     dependencies:
-      baseline-browser-mapping: 2.11.1
+      baseline-browser-mapping: 2.11.8
       caniuse-lite: 1.0.30001806
-      electron-to-chromium: 1.5.395
+      electron-to-chromium: 1.5.399
       node-releases: 2.0.51
       update-browserslist-db: 1.2.3(browserslist@4.28.7)
 
