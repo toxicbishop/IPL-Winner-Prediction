@@ -17,4 +17,4 @@ psycopg2-binary==2.9.9
 mlflow~=3.14.0
 python-dotenv==1.2.2
 slowapi==0.1.10
-sqlalchemy==2.0.35
+sqlalchemy==2.0.51
