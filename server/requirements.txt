@@ -13,7 +13,7 @@ uvicorn==0.51.0
 tqdm==4.66.5
 pydantic==2.9.2
 pyarrow==24.0.0
-psycopg2-binary==2.9.9
+psycopg2-binary==2.9.12
 mlflow~=3.14.0
 python-dotenv==1.2.2
 slowapi==0.1.10
