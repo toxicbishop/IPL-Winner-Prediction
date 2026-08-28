@@ -9,7 +9,7 @@ joblib==1.5.3
 shap==0.46.0
 optuna==4.9.0
 fastapi==0.115.0
-uvicorn==0.51.0
+uvicorn==0.52.4
 tqdm==4.66.5
 pydantic==2.9.2
 pyarrow==24.0.0
