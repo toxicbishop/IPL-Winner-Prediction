@@ -5,7 +5,7 @@ xgboost==2.1.1
 lightgbm==4.7.0
 matplotlib==3.11.1
 seaborn==0.13.2
-joblib==1.5.3
+joblib==1.6.0
 shap==0.46.0
 optuna==4.9.0
 fastapi==0.115.0
