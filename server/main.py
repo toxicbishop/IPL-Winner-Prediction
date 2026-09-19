@@ -79,13 +79,13 @@ def mode_predict():
     logger.info("=== PREDICT: IPL 2026 Winner Prediction ===")
     t0 = time.time()
 
-    from src.prediction.predict_2026 import (
-        predict_2026_winner,
+    from src.prediction.predict import (
+        predict_winner,
         print_predictions,
         save_predictions,
     )
 
-    rankings, fixtures = predict_2026_winner()
+    rankings, fixtures = predict_winner()
     print_predictions(rankings)
     save_predictions(rankings, fixtures)
 

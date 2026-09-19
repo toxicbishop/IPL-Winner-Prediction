@@ -11,7 +11,7 @@ from src.data.preprocess import run_preprocessing
 from src.features.engineer import run_feature_engineering
 from src.models.trainer import run_training
 from src.prediction.explainability import run_explainability
-from src.prediction.predict_2026 import predict_2026_winner, save_predictions
+from src.prediction.predict import predict_winner, save_predictions
 
 
 def rebuild(tournament: str):
@@ -40,7 +40,7 @@ def rebuild(tournament: str):
     run_training(tournament)
 
     # 7. Prediction
-    rankings, fixtures = predict_2026_winner(tournament)
+    rankings, fixtures = predict_winner(tournament)
     save_predictions(rankings, fixtures, tournament)
 
     # 8. Explainability (SHAP values)
