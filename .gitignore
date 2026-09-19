@@ -33,6 +33,7 @@ env/
 *.log
 *.txt
 !requirements.txt
+!**/requirements.txt
 logs/
 
 # Data outputs (generated - not committed to keep repo lean)
@@ -86,7 +87,11 @@ Thumbs.db
 
 # MLflow
 mlruns/
+**/mlruns/
 mlflow.db
+server/outputs/mlflow/
+outputs/mlflow/
+**/outputs/mlflow/
 
 # Prefect
 .prefect/
