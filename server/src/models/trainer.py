@@ -21,6 +21,7 @@ from src.models.xgboost_model import XGBoostModel
 logger = logging.getLogger(__name__)
 
 # Set MLflow experiment
+os.environ["MLFLOW_ALLOW_FILE_STORE"] = "true"
 mlflow.set_tracking_uri(f"file:///{os.path.abspath(os.path.join('outputs', 'mlflow'))}")
 mlflow.set_experiment("IPL_2026_Winner_Prediction")
 

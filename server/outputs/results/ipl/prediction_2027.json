@@ -11,7 +11,7 @@
       "rank": 1,
       "team_id": "RCB",
       "team_name": "Royal Challengers Bengaluru",
-      "win_probability": 19.15,
+      "win_probability": 18.01,
       "confidence": "High",
       "explanation": {
         "why": [
@@ -29,7 +29,7 @@
       "rank": 2,
       "team_id": "SRH",
       "team_name": "Sunrisers Hyderabad",
-      "win_probability": 14.08,
+      "win_probability": 12.18,
       "confidence": "Medium",
       "explanation": {
         "why": [
@@ -46,7 +46,7 @@
       "rank": 3,
       "team_id": "GT",
       "team_name": "Gujarat Titans",
-      "win_probability": 12.94,
+      "win_probability": 11.27,
       "confidence": "Medium",
       "explanation": {
         "why": [
@@ -61,9 +61,9 @@
     },
     {
       "rank": 4,
-      "team_id": "RR",
-      "team_name": "Rajasthan Royals",
-      "win_probability": 10.15,
+      "team_id": "KKR",
+      "team_name": "Kolkata Knight Riders",
+      "win_probability": 10.4,
       "confidence": "Medium",
       "explanation": {
         "why": [
@@ -78,9 +78,9 @@
     },
     {
       "rank": 5,
-      "team_id": "KKR",
-      "team_name": "Kolkata Knight Riders",
-      "win_probability": 9.63,
+      "team_id": "RR",
+      "team_name": "Rajasthan Royals",
+      "win_probability": 10.3,
       "confidence": "Medium",
       "explanation": {
         "why": [
@@ -97,7 +97,7 @@
       "rank": 6,
       "team_id": "PBKS",
       "team_name": "Punjab Kings",
-      "win_probability": 6.45,
+      "win_probability": 6.52,
       "confidence": "Low",
       "explanation": {
         "why": [
@@ -114,7 +114,7 @@
       "rank": 7,
       "team_id": "DC",
       "team_name": "Delhi Capitals",
-      "win_probability": 4.66,
+      "win_probability": 4.63,
       "confidence": "Low",
       "explanation": {
         "why": [
