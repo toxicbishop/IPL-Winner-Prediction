@@ -6,7 +6,7 @@ lightgbm==4.7.0
 matplotlib==3.11.2
 seaborn==0.13.2
 joblib==1.6.0
-shap==0.46.0
+shap==0.53.0
 optuna==4.9.0
 fastapi==0.115.0
 uvicorn==0.51.0
