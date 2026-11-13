@@ -12,7 +12,7 @@
     "clsx": "^2.1.1",
     "framer-motion": "^13.3.0",
     "lucide-react": "^1.66.0",
-    "react": "^19.3.0",
+    "react": "^19.3.1",
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.3",
     "recharts": "^3.10.1",
